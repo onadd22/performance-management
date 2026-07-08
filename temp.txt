@@ -1,0 +1,30 @@
+2:import { ReviewCycle, PerformanceReview as ReviewType, User, Circle, KpiItem, BscPerspective, Rater360Group, SystemConfig, Objective, KeyResult, KeyResultAssignee, Role, RoleMember } from "../types";
+6:interface PerformanceReviewProps {
+11:  performanceReviews: ReviewType[];
+22:export default function PerformanceReview({
+27:  performanceReviews,
+36:}: PerformanceReviewProps) {
+92:        const matchedReview = performanceReviews.find(
+311:  }, [selectedUserId, selectedCycleId, performanceReviews]);
+439:    let performanceScore = okrScore;
+442:      performanceScore = kpis.reduce((sum, item) => sum + (item.score * (item.weight / (totalWeight || 100))), 0);
+445:      performanceScore = bscPerspectives.reduce((sum, item) => sum + (item.score * (item.weight / (bscTotalWeight || 100))), 0);
+447:    performanceScore = Math.round(performanceScore);
+465:    let finalScore = performanceScore;
+467:      finalScore = Math.round((performanceScore + eval360Score) / 2);
+470:    return { performanceScore, eval360Score, finalScore };
+503:    <div className="grid grid-cols-1 xl:grid-cols-12 gap-6" id="performance-reviews-wrapper">
+563:              const userReview = performanceReviews.find(
+737:                  ? "Atur daftar parameter KPI (Key Performance Indicators) utama karyawan beserta bobot kepentingannya. Pastikan total bobot bernilai 100% untuk penilaian yang sah."
+1001:                                  if (systemConfig?.performanceCategories) {
+1002:                                    const cat = systemConfig.performanceCategories.find(c => p.score >= c.minScore && p.score <= c.maxScore);
+1096:          const { performanceScore, eval360Score, finalScore } = calculateScores();
+1098:          if (systemConfig?.performanceCategories && systemConfig.performanceCategories.length > 0) {
+1099:            matchedCategory = systemConfig.performanceCategories.find(c => finalScore >= c.minScore && finalScore <= c.maxScore);
+1109:                  {lang === "ID" ? "Skor Kinerja Komprehensif" : "Comprehensive Performance Score"}
+1114:                      ? "Hasil akhir dihitung dari rata-rata seimbang antara Skor Kinerja (Performance) dan hasil tarikan data Assessment 360 derajat. Keduanya dikonversi ke persen lalu dijumlahkan dan dibagi dua."
+1115:                      : "Perusahaan ini tidak memiliki data Assessment 360 untuk karyawan ini, sehingga skor akhir diambil 100% dari data Performance (Kinerja)."
+1117:                      ? "The final result is calculated from a balanced average between the Performance Score and the pulled 360-degree Assessment data. Both are converted to percentages, summed, and divided by two."
+1118:                      : "No 360 Assessment data found for this employee, so the final score is taken 100% from Performance data."}
+1122:                    <span className="text-slate-400 text-[10px] uppercase tracking-wider font-bold">Performance:</span>
+1123:                    <span className="text-white font-mono font-bold">{performanceScore}%</span>

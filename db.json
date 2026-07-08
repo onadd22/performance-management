@@ -1,0 +1,3575 @@
+{
+  "users": [
+    {
+      "id": "usr_hr_1",
+      "name": "Ali Rahman",
+      "email": "ali@company.com",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
+      "department": "HRD",
+      "systemRole": "direksi"
+    },
+    {
+      "id": "usr_hr_2",
+      "name": "Budi Santoso",
+      "email": "budi@company.com",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+      "department": "HRD",
+      "systemRole": "karyawan"
+    },
+    {
+      "id": "usr_prod_1",
+      "name": "Cici Utami",
+      "email": "cici@company.com",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150",
+      "department": "Produksi",
+      "systemRole": "atasan_langsung",
+      "managerId": "usr_mkt_2"
+    },
+    {
+      "id": "usr_prod_2",
+      "name": "Dedi Setiawan",
+      "email": "dedi@company.com",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150",
+      "department": "Produksi",
+      "systemRole": "karyawan"
+    },
+    {
+      "id": "usr_mkt_1",
+      "name": "Eko Prasetyo",
+      "email": "eko@company.com",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "department": "Marketing",
+      "systemRole": "atasan_langsung"
+    },
+    {
+      "id": "usr_mkt_2",
+      "name": "Fani Wijaya",
+      "email": "fani@company.com",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150",
+      "department": "Marketing",
+      "systemRole": "karyawan"
+    },
+    {
+      "id": "usr_fin_1",
+      "name": "Gita Purnamasari",
+      "email": "gita@company.com",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+      "department": "Finance",
+      "systemRole": "atasan_langsung"
+    },
+    {
+      "id": "usr_fin_2",
+      "name": "Hendra Gunawan",
+      "email": "hendra@company.com",
+      "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150",
+      "department": "Finance",
+      "systemRole": "karyawan"
+    }
+  ],
+  "circles": [
+    {
+      "id": "circle_hr",
+      "name": "Human Resources",
+      "description": "HR Department",
+      "subCircleOfId": null,
+      "leadId": "usr_hr_1",
+      "circleType": "department"
+    },
+    {
+      "id": "circle_prod",
+      "name": "Production",
+      "description": "Production Department",
+      "subCircleOfId": null,
+      "leadId": "usr_prod_1",
+      "circleType": "department"
+    },
+    {
+      "id": "circle_mkt",
+      "name": "Marketing & Sales",
+      "description": "Marketing Department",
+      "subCircleOfId": null,
+      "leadId": "usr_mkt_1",
+      "circleType": "department"
+    },
+    {
+      "id": "circle_fin",
+      "name": "Finance & Tax",
+      "description": "Finance Department",
+      "subCircleOfId": null,
+      "leadId": "usr_fin_1",
+      "circleType": "department"
+    }
+  ],
+  "roles": [
+    {
+      "id": "role_hr_lead",
+      "title": "VP of HR",
+      "circleId": "circle_hr",
+      "description": "Lead HR",
+      "accountabilities": []
+    },
+    {
+      "id": "role_hr_staff",
+      "title": "HR Specialist",
+      "circleId": "circle_hr",
+      "description": "HR Staff",
+      "accountabilities": []
+    },
+    {
+      "id": "role_prod_lead",
+      "title": "VP of Production",
+      "circleId": "circle_prod",
+      "description": "Lead Prod",
+      "accountabilities": []
+    },
+    {
+      "id": "role_prod_staff",
+      "title": "Production Operator",
+      "circleId": "circle_prod",
+      "description": "Prod Staff",
+      "accountabilities": []
+    },
+    {
+      "id": "role_mkt_lead",
+      "title": "VP of Marketing",
+      "circleId": "circle_mkt",
+      "description": "Lead Marketing",
+      "accountabilities": []
+    },
+    {
+      "id": "role_mkt_staff",
+      "title": "Marketing Specialist",
+      "circleId": "circle_mkt",
+      "description": "Marketing Staff",
+      "accountabilities": []
+    },
+    {
+      "id": "role_fin_lead",
+      "title": "VP of Finance",
+      "circleId": "circle_fin",
+      "description": "Lead Finance",
+      "accountabilities": []
+    },
+    {
+      "id": "role_fin_staff",
+      "title": "Accountant",
+      "circleId": "circle_fin",
+      "description": "Finance Staff",
+      "accountabilities": []
+    }
+  ],
+  "roleMembers": [
+    {
+      "id": "rm_hr_1",
+      "roleId": "role_hr_lead",
+      "userId": "usr_hr_1"
+    },
+    {
+      "id": "rm_hr_2",
+      "roleId": "role_hr_staff",
+      "userId": "usr_hr_2"
+    },
+    {
+      "id": "rm_prod_1",
+      "roleId": "role_prod_lead",
+      "userId": "usr_prod_1"
+    },
+    {
+      "id": "rm_prod_2",
+      "roleId": "role_prod_staff",
+      "userId": "usr_prod_2"
+    },
+    {
+      "id": "rm_mkt_1",
+      "roleId": "role_mkt_lead",
+      "userId": "usr_mkt_1"
+    },
+    {
+      "id": "rm_mkt_2",
+      "roleId": "role_mkt_staff",
+      "userId": "usr_mkt_2"
+    },
+    {
+      "id": "rm_fin_1",
+      "roleId": "role_fin_lead",
+      "userId": "usr_fin_1"
+    },
+    {
+      "id": "rm_fin_2",
+      "roleId": "role_fin_staff",
+      "userId": "usr_fin_2"
+    }
+  ],
+  "objectives": [
+    {
+      "id": "obj_hr_draft_1",
+      "title": "Membangun Program Leadership Berkelanjutan",
+      "level": "circle",
+      "circleId": "circle_hr",
+      "parentId": null,
+      "targetQuarter": "Q1 2026",
+      "status": "pending",
+      "currentApprovalStep": 1
+    },
+    {
+      "id": "obj_mkt_draft_1",
+      "title": "Ekspansi Kampanye Marketing Regional",
+      "level": "circle",
+      "circleId": "circle_mkt",
+      "parentId": null,
+      "targetQuarter": "Q1 2026",
+      "status": "pending",
+      "currentApprovalStep": 1
+    },
+    {
+      "id": "obj_hr_1",
+      "title": "Meningkatkan Kualitas SDM dan Budaya Kerja",
+      "level": "circle",
+      "circleId": "circle_hr",
+      "parentId": null,
+      "targetQuarter": "Q1 2026",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "obj_prod_1",
+      "title": "Optimalisasi Efisiensi Produksi",
+      "level": "circle",
+      "circleId": "circle_prod",
+      "parentId": null,
+      "targetQuarter": "Q1 2026",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "obj_mkt_1",
+      "title": "Ekspansi Pangsa Pasar Domestik",
+      "level": "circle",
+      "circleId": "circle_mkt",
+      "parentId": null,
+      "targetQuarter": "Q1 2026",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "obj_fin_1",
+      "title": "Optimalisasi Arus Kas Perusahaan",
+      "level": "circle",
+      "circleId": "circle_fin",
+      "parentId": null,
+      "targetQuarter": "Q1 2026",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "obj_corp_1",
+      "title": "Mencapai Pertumbuhan Pendapatan Berkelanjutan 2026",
+      "level": "company",
+      "circleId": null,
+      "parentId": null,
+      "targetQuarter": "Q1 2026",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "obj_corp_2",
+      "title": "Membangun Operational Excellence dan Budaya Inovasi",
+      "level": "company",
+      "circleId": null,
+      "parentId": null,
+      "targetQuarter": "Q1 2026",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "obj_1783484819001",
+      "title": "ssss",
+      "level": "company",
+      "circleId": null,
+      "parentId": null,
+      "targetQuarter": "Q1 2026",
+      "okrType": "committed",
+      "status": "pending",
+      "currentApprovalStep": 0
+    }
+  ],
+  "keyResults": [
+    {
+      "id": "kr_hr_draft_1",
+      "objectiveId": "obj_hr_draft_1",
+      "title": "Mencetak 5 pemimpin baru dari jalur internal",
+      "targetValue": 5,
+      "unit": "Orang",
+      "calcSystem": "maximize",
+      "weight": 100,
+      "isShared": false,
+      "okrType": "aspirational",
+      "status": "pending",
+      "currentApprovalStep": 1,
+      "currentValue": 0,
+      "progress": 0
+    },
+    {
+      "id": "kr_mkt_draft_1",
+      "objectiveId": "obj_mkt_draft_1",
+      "title": "Meningkatkan ROI Kampanye menjadi 3.5",
+      "targetValue": 3.5,
+      "unit": "Ratio",
+      "calcSystem": "maximize",
+      "weight": 100,
+      "isShared": false,
+      "okrType": "committed",
+      "status": "pending",
+      "currentApprovalStep": 1,
+      "currentValue": 0,
+      "progress": 0
+    },
+    {
+      "id": "kr_hr_1",
+      "objectiveId": "obj_hr_1",
+      "title": "Mencapai nilai employee engagement 0.85",
+      "targetValue": 0.85,
+      "currentValue": 0.85,
+      "unit": "",
+      "progress": 100,
+      "weight": 30,
+      "isShared": false,
+      "okrType": "committed",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "kr_hr_2",
+      "objectiveId": "obj_hr_1",
+      "title": "Menyelenggarakan 5 program training kepemimpinan",
+      "targetValue": 5,
+      "currentValue": 4,
+      "unit": "Program",
+      "progress": 80,
+      "weight": 30,
+      "isShared": false,
+      "okrType": "committed",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "kr_hr_3",
+      "objectiveId": "obj_hr_1",
+      "title": "Meningkatkan retensi karyawan menjadi 95%",
+      "targetValue": 0.95,
+      "currentValue": 0.8,
+      "unit": "",
+      "progress": 84,
+      "weight": 40,
+      "isShared": false,
+      "okrType": "aspirational",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "kr_prod_1",
+      "objectiveId": "obj_prod_1",
+      "title": "Mengurangi defect rate menjadi di bawah 0.05",
+      "targetValue": 0.95,
+      "currentValue": 0.8,
+      "unit": "",
+      "progress": 84,
+      "weight": 100,
+      "isShared": false,
+      "okrType": "committed",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "kr_mkt_1",
+      "objectiveId": "obj_mkt_1",
+      "title": "Mencapai 1000 lead kualifikasi (1.00 dari target)",
+      "targetValue": 1,
+      "currentValue": 0.65,
+      "unit": "",
+      "progress": 65,
+      "weight": 100,
+      "isShared": false,
+      "okrType": "committed",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "kr_fin_1",
+      "objectiveId": "obj_fin_1",
+      "title": "Menurunkan DSO (Days Sales Outstanding) sebesar 20%",
+      "targetValue": 1,
+      "currentValue": 0.4,
+      "unit": "",
+      "progress": 40,
+      "weight": 100,
+      "isShared": false,
+      "okrType": "committed",
+      "status": "approved",
+      "currentApprovalStep": 2
+    },
+    {
+      "id": "kr_corp_1_1",
+      "objectiveId": "obj_corp_1",
+      "title": "Meningkatkan pangsa pasar menjadi 35%",
+      "targetValue": 35,
+      "unit": "%",
+      "calcSystem": "maximize",
+      "weight": 50,
+      "currentValue": 20,
+      "progress": 57,
+      "isShared": false,
+      "okrType": "committed",
+      "status": "approved"
+    },
+    {
+      "id": "kr_corp_1_2",
+      "objectiveId": "obj_corp_1",
+      "title": "Mempertahankan margin EBITDA di 20%",
+      "targetValue": 20,
+      "unit": "%",
+      "calcSystem": "maximize",
+      "weight": 50,
+      "currentValue": 18,
+      "progress": 90,
+      "isShared": false,
+      "okrType": "committed",
+      "status": "approved"
+    },
+    {
+      "id": "kr_corp_2_1",
+      "objectiveId": "obj_corp_2",
+      "title": "Menurunkan turnover rate menjadi < 5%",
+      "targetValue": 5,
+      "unit": "%",
+      "calcSystem": "minimize",
+      "weight": 50,
+      "currentValue": 8,
+      "progress": 40,
+      "isShared": false,
+      "okrType": "committed",
+      "status": "approved"
+    },
+    {
+      "id": "kr_corp_2_2",
+      "objectiveId": "obj_corp_2",
+      "title": "Meningkatkan OEE (Overall Equipment Effectiveness) ke 85%",
+      "targetValue": 85,
+      "unit": "%",
+      "calcSystem": "maximize",
+      "weight": 50,
+      "currentValue": 70,
+      "progress": 82,
+      "isShared": false,
+      "okrType": "committed",
+      "status": "approved"
+    }
+  ],
+  "keyResultAssignees": [
+    {
+      "id": "kra_hr_1",
+      "keyResultId": "kr_hr_1",
+      "circleId": "circle_hr",
+      "roleId": "role_hr_staff",
+      "weightPercentage": 100,
+      "currentProgress": 100
+    },
+    {
+      "id": "kra_hr_2",
+      "keyResultId": "kr_hr_2",
+      "circleId": "circle_hr",
+      "roleId": "role_hr_staff",
+      "weightPercentage": 100,
+      "currentProgress": 40
+    },
+    {
+      "id": "kra_hr_3",
+      "keyResultId": "kr_hr_3",
+      "circleId": "circle_hr",
+      "roleId": "role_hr_staff",
+      "weightPercentage": 100,
+      "currentProgress": 84
+    },
+    {
+      "id": "kra_prod_1",
+      "keyResultId": "kr_prod_1",
+      "circleId": "circle_prod",
+      "roleId": "role_prod_staff",
+      "weightPercentage": 100,
+      "currentProgress": 84
+    },
+    {
+      "id": "kra_mkt_1",
+      "keyResultId": "kr_mkt_1",
+      "circleId": "circle_mkt",
+      "roleId": "role_mkt_staff",
+      "weightPercentage": 100,
+      "currentProgress": 65
+    },
+    {
+      "id": "kra_fin_1",
+      "keyResultId": "kr_fin_1",
+      "circleId": "circle_fin",
+      "roleId": "role_fin_staff",
+      "weightPercentage": 100,
+      "currentProgress": 40
+    }
+  ],
+  "checkInLogs": [
+    {
+      "id": "cil_1",
+      "keyResultId": "kr_hr_2",
+      "assigneeId": "usr_hr_2",
+      "roleId": "role_1",
+      "previousValue": 0,
+      "newValue": 2,
+      "notes": "Telah menyelesaikan 2 program kepemimpinan untuk level manajer bulan ini.",
+      "blockerNotes": null,
+      "hasBlocker": false,
+      "dependencyCircleId": null,
+      "dependencyRoleId": null,
+      "timestamp": "2026-06-29T06:23:16.628Z",
+      "status": "approved",
+      "approverId": "usr_hr_1",
+      "approverNotes": "Kerja bagus, terus lanjutkan progresnya.",
+      "approverIds": [
+        "usr_hr_1"
+      ],
+      "updateFrequency": "weekly",
+      "attachmentName": "laporan_training_batch1.pdf"
+    },
+    {
+      "id": "cil_2",
+      "keyResultId": "kr_hr_2",
+      "assigneeId": "usr_hr_2",
+      "roleId": "role_1",
+      "previousValue": 2,
+      "newValue": 4,
+      "notes": "Persiapan program 3 dan 4 sudah matang, namun menunggu finalisasi materi dari vendor eksternal.",
+      "blockerNotes": "Vendor eksternal terlambat mengirimkan modul training.",
+      "hasBlocker": true,
+      "dependencyCircleId": "circle_1",
+      "dependencyRoleId": null,
+      "timestamp": "2026-07-01T01:23:16.628Z",
+      "status": "pending",
+      "approverId": null,
+      "approverNotes": null,
+      "approverIds": [
+        "usr_hr_1"
+      ],
+      "updateFrequency": "weekly",
+      "attachmentName": "draft_modul_vendor.docx"
+    },
+    {
+      "id": "cil_3",
+      "keyResultId": "kr_hr_2",
+      "assigneeId": "usr_hr_2",
+      "roleId": "role_1",
+      "previousValue": 4,
+      "newValue": 4,
+      "notes": "Laporan kemajuan minggu ini ditolak karena data tidak valid.",
+      "blockerNotes": null,
+      "hasBlocker": false,
+      "dependencyCircleId": null,
+      "dependencyRoleId": null,
+      "timestamp": "2026-06-30T06:23:16.628Z",
+      "status": "rejected",
+      "approverId": "usr_hr_1",
+      "approverNotes": "Tolong lengkapi dengan data partisipan yang hadir.",
+      "approverIds": [
+        "usr_hr_1"
+      ],
+      "updateFrequency": "weekly"
+    },
+    {
+      "id": "cil_4",
+      "keyResultId": "kr_prod_1",
+      "assigneeId": "usr_prod_2",
+      "roleId": "role_2",
+      "previousValue": 0,
+      "newValue": 1,
+      "notes": "Rilis MVP tertunda karena ada issue major pada database migration.",
+      "blockerNotes": null,
+      "hasBlocker": false,
+      "dependencyCircleId": null,
+      "dependencyRoleId": null,
+      "timestamp": "2026-06-26T06:23:16.628Z",
+      "status": "rejected",
+      "approverId": "usr_prod_1",
+      "approverNotes": "Harap perbaiki issue critical terlebih dahulu sebelum melaporkan progres rilis.",
+      "approverIds": [
+        "usr_prod_1"
+      ],
+      "updateFrequency": "weekly",
+      "attachmentName": "error_log_migration.txt"
+    }
+  ],
+  "reviewCycles": [
+    {
+      "id": "cycle_1",
+      "name": "Q1 2026 Performance Review",
+      "startDate": "2026-03-15",
+      "endDate": "2026-03-31",
+      "status": "active"
+    }
+  ],
+  "performanceReviews": [
+    {
+      "id": "rev_finished_1",
+      "cycleId": "cycle_1",
+      "userId": "usr_hr_2",
+      "evaluatedBy": "usr_hr_1",
+      "okrScore": 85,
+      "qualitativeScore": 4.5,
+      "managerFeedback": "Kerja bagus, OKR tercapai dengan sangat baik.",
+      "selfAssessment": "Saya merasa telah berkontribusi maksimal pada kuartal ini.",
+      "growthPlan": "Ingin mengambil sertifikasi HR lanjutan.",
+      "status": "submitted",
+      "updatedAt": "2026-03-20T10:00:00Z",
+      "reviewMethod": "okr"
+    },
+    {
+      "id": "rev_draft_1",
+      "cycleId": "cycle_1",
+      "userId": "usr_prod_1",
+      "evaluatedBy": "usr_hr_1",
+      "okrScore": 70,
+      "qualitativeScore": 3.5,
+      "managerFeedback": "Masih banyak ruang untuk perbaikan di efisiensi produksi.",
+      "selfAssessment": "Ada kendala bahan baku di awal bulan.",
+      "growthPlan": "",
+      "status": "draft",
+      "updatedAt": "2026-03-25T14:30:00Z",
+      "reviewMethod": "okr"
+    }
+  ],
+  "eval360Submissions": [
+    {
+      "id": "sub360_finished_1",
+      "templateId": "template_1",
+      "evaluateeId": "usr_hr_1",
+      "evaluatorId": "usr_hr_2",
+      "groupId": "subordinate",
+      "answers": [
+        {
+          "questionId": "q1",
+          "score": 4
+        },
+        {
+          "questionId": "q2",
+          "score": 5
+        }
+      ],
+      "totalScore": 90,
+      "status": "submitted",
+      "submittedAt": "2026-03-21T09:15:00Z",
+      "notes": "Kepemimpinan sangat suportif."
+    },
+    {
+      "id": "sub360_draft_1",
+      "templateId": "template_1",
+      "evaluateeId": "usr_prod_1",
+      "evaluatorId": "usr_prod_2",
+      "groupId": "peer",
+      "answers": [
+        {
+          "questionId": "q1",
+          "score": 3
+        }
+      ],
+      "totalScore": 60,
+      "status": "draft",
+      "notes": "Kerjasama tim perlu ditingkatkan."
+    }
+  ],
+  "talent9BoxConfigs": [
+    {
+      "id": "box_1",
+      "boxNumber": 1,
+      "name": "Underperformer",
+      "description": "Low Performance, Low Potential",
+      "color": "bg-red-500",
+      "priority": "Low",
+      "recommendations": [
+        "Performance Improvement Plan",
+        "Reassignment"
+      ],
+      "minPerf": 0,
+      "maxPerf": 33,
+      "minPot": 0,
+      "maxPot": 33
+    },
+    {
+      "id": "box_2",
+      "boxNumber": 2,
+      "name": "Inconsistent",
+      "description": "Low Performance, Medium Potential",
+      "color": "bg-orange-400",
+      "priority": "Low",
+      "recommendations": [
+        "Coaching",
+        "Role Realignment"
+      ],
+      "minPerf": 0,
+      "maxPerf": 33,
+      "minPot": 34,
+      "maxPot": 66
+    },
+    {
+      "id": "box_3",
+      "boxNumber": 3,
+      "name": "Rough Diamond",
+      "description": "Low Performance, High Potential",
+      "color": "bg-amber-400",
+      "priority": "Medium",
+      "recommendations": [
+        "Mentoring",
+        "New Challenge"
+      ],
+      "minPerf": 0,
+      "maxPerf": 33,
+      "minPot": 67,
+      "maxPot": 100
+    },
+    {
+      "id": "box_4",
+      "boxNumber": 4,
+      "name": "Solid Contributor",
+      "description": "Medium Performance, Low Potential",
+      "color": "bg-orange-400",
+      "priority": "Medium",
+      "recommendations": [
+        "Keep Motivated",
+        "Reward"
+      ],
+      "minPerf": 34,
+      "maxPerf": 66,
+      "minPot": 0,
+      "maxPot": 33
+    },
+    {
+      "id": "box_5",
+      "boxNumber": 5,
+      "name": "Core Employee",
+      "description": "Medium Performance, Medium Potential",
+      "color": "bg-yellow-400",
+      "priority": "Medium",
+      "recommendations": [
+        "Develop Skills",
+        "Stretch Assignment"
+      ],
+      "minPerf": 34,
+      "maxPerf": 66,
+      "minPot": 34,
+      "maxPot": 66
+    },
+    {
+      "id": "box_6",
+      "boxNumber": 6,
+      "name": "High Potential",
+      "description": "Medium Performance, High Potential",
+      "color": "bg-lime-500",
+      "priority": "High",
+      "recommendations": [
+        "Leadership Program",
+        "Fast Track"
+      ],
+      "minPerf": 34,
+      "maxPerf": 66,
+      "minPot": 67,
+      "maxPot": 100
+    },
+    {
+      "id": "box_7",
+      "boxNumber": 7,
+      "name": "Trusted Expert",
+      "description": "High Performance, Low Potential",
+      "color": "bg-emerald-400",
+      "priority": "Medium",
+      "recommendations": [
+        "Recognize",
+        "Subject Matter Expert Role"
+      ],
+      "minPerf": 67,
+      "maxPerf": 100,
+      "minPot": 0,
+      "maxPot": 33
+    },
+    {
+      "id": "box_8",
+      "boxNumber": 8,
+      "name": "High Performer",
+      "description": "High Performance, Medium Potential",
+      "color": "bg-emerald-500",
+      "priority": "High",
+      "recommendations": [
+        "Prepare for Promotion",
+        "Key Projects"
+      ],
+      "minPerf": 67,
+      "maxPerf": 100,
+      "minPot": 34,
+      "maxPot": 66
+    },
+    {
+      "id": "box_9",
+      "boxNumber": 9,
+      "name": "Future Leader",
+      "description": "High Performance, High Potential",
+      "color": "bg-emerald-600",
+      "priority": "High",
+      "recommendations": [
+        "Promote",
+        "Executive Mentoring"
+      ],
+      "minPerf": 67,
+      "maxPerf": 100,
+      "minPot": 67,
+      "maxPot": 100
+    }
+  ],
+  "talentEmployees": [
+    {
+      "id": "emp_1",
+      "name": "Siti Santoso",
+      "gender": "Male",
+      "age": 27,
+      "department": "Sales",
+      "position": "Staff 0",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2022-05-20",
+      "tenureYears": 1,
+      "performanceScore": 74,
+      "potentialScore": 97,
+      "boxId": "box_9",
+      "badges": [
+        "Future Leader",
+        "Ready Now",
+        "High Potential"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 44,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=0"
+    },
+    {
+      "id": "emp_2",
+      "name": "Sarah Wahyudi",
+      "gender": "Female",
+      "age": 61,
+      "department": "Operation",
+      "position": "Staff 1",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2020-01-30",
+      "tenureYears": 1,
+      "performanceScore": 37,
+      "potentialScore": 67,
+      "boxId": "box_6",
+      "badges": [],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 32,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=1"
+    },
+    {
+      "id": "emp_3",
+      "name": "Anton Nugroho",
+      "gender": "Female",
+      "age": 37,
+      "department": "Sales",
+      "position": "Staff 2",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2018-09-09",
+      "tenureYears": 8,
+      "performanceScore": 53,
+      "potentialScore": 96,
+      "boxId": "box_6",
+      "badges": [
+        "High Potential"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 73,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=2"
+    },
+    {
+      "id": "emp_4",
+      "name": "David Pratama",
+      "gender": "Female",
+      "age": 35,
+      "department": "Finance",
+      "position": "Staff 3",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2025-05-08",
+      "tenureYears": 4,
+      "performanceScore": 87,
+      "potentialScore": 46,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now",
+        "High Performer"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 64,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=3"
+    },
+    {
+      "id": "emp_5",
+      "name": "Linda Santoso",
+      "gender": "Male",
+      "age": 44,
+      "department": "Sales",
+      "position": "Staff 4",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2024-06-21",
+      "tenureYears": 4,
+      "performanceScore": 82,
+      "potentialScore": 53,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now",
+        "High Performer"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 96,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=4"
+    },
+    {
+      "id": "emp_6",
+      "name": "Ayu Pangestu",
+      "gender": "Male",
+      "age": 24,
+      "department": "HR",
+      "position": "Staff 5",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2017-03-13",
+      "tenureYears": 7,
+      "performanceScore": 56,
+      "potentialScore": 65,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 51,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=5"
+    },
+    {
+      "id": "emp_7",
+      "name": "Putri Wijaya",
+      "gender": "Male",
+      "age": 35,
+      "department": "HR",
+      "position": "Staff 6",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2025-08-11",
+      "tenureYears": 6,
+      "performanceScore": 25,
+      "potentialScore": 12,
+      "boxId": "box_1",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 47,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=6"
+    },
+    {
+      "id": "emp_8",
+      "name": "Dewi Wijaya",
+      "gender": "Male",
+      "age": 28,
+      "department": "Marketing",
+      "position": "Staff 7",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2023-04-25",
+      "tenureYears": 6,
+      "performanceScore": 89,
+      "potentialScore": 75,
+      "boxId": "box_9",
+      "badges": [
+        "Future Leader",
+        "Ready Now",
+        "High Performer"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 61,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=7"
+    },
+    {
+      "id": "emp_9",
+      "name": "Nina Siregar",
+      "gender": "Male",
+      "age": 31,
+      "department": "Marketing",
+      "position": "Staff 8",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2017-03-10",
+      "tenureYears": 1,
+      "performanceScore": 61,
+      "potentialScore": 52,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 64,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=8"
+    },
+    {
+      "id": "emp_10",
+      "name": "Budi Sari",
+      "gender": "Female",
+      "age": 58,
+      "department": "Operation",
+      "position": "Staff 9",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2017-03-11",
+      "tenureYears": 3,
+      "performanceScore": 3,
+      "potentialScore": 74,
+      "boxId": "box_3",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 64,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=9"
+    },
+    {
+      "id": "emp_11",
+      "name": "Budi Nugroho",
+      "gender": "Male",
+      "age": 23,
+      "department": "Product",
+      "position": "Staff 10",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2018-10-19",
+      "tenureYears": 0,
+      "performanceScore": 50,
+      "potentialScore": 23,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 41,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=10"
+    },
+    {
+      "id": "emp_12",
+      "name": "John Setiawan",
+      "gender": "Male",
+      "age": 47,
+      "department": "Finance",
+      "position": "Staff 11",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2020-12-27",
+      "tenureYears": 6,
+      "performanceScore": 18,
+      "potentialScore": 27,
+      "boxId": "box_1",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 63,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=11"
+    },
+    {
+      "id": "emp_13",
+      "name": "Reza Santoso",
+      "gender": "Female",
+      "age": 50,
+      "department": "Sales",
+      "position": "Staff 12",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2023-02-19",
+      "tenureYears": 6,
+      "performanceScore": 21,
+      "potentialScore": 57,
+      "boxId": "box_2",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 48,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=12"
+    },
+    {
+      "id": "emp_14",
+      "name": "Jane Pangestu",
+      "gender": "Male",
+      "age": 54,
+      "department": "Product",
+      "position": "Staff 13",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2026-04-03",
+      "tenureYears": 1,
+      "performanceScore": 83,
+      "potentialScore": 64,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now",
+        "High Performer"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 46,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=13"
+    },
+    {
+      "id": "emp_15",
+      "name": "Dimas Setiawan",
+      "gender": "Male",
+      "age": 42,
+      "department": "HR",
+      "position": "Staff 14",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2016-08-05",
+      "tenureYears": 8,
+      "performanceScore": 91,
+      "potentialScore": 39,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now",
+        "High Performer"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 15,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=14"
+    },
+    {
+      "id": "emp_16",
+      "name": "Siti Siregar",
+      "gender": "Female",
+      "age": 31,
+      "department": "Finance",
+      "position": "Staff 15",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2016-11-29",
+      "tenureYears": 5,
+      "performanceScore": 71,
+      "potentialScore": 75,
+      "boxId": "box_9",
+      "badges": [
+        "Future Leader",
+        "Ready Now"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 98,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=15"
+    },
+    {
+      "id": "emp_17",
+      "name": "Fahmi Pangestu",
+      "gender": "Male",
+      "age": 22,
+      "department": "Marketing",
+      "position": "Staff 16",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2021-04-05",
+      "tenureYears": 7,
+      "performanceScore": 75,
+      "potentialScore": 32,
+      "boxId": "box_7",
+      "badges": [],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 87,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=16"
+    },
+    {
+      "id": "emp_18",
+      "name": "Reza Hidayat",
+      "gender": "Male",
+      "age": 34,
+      "department": "Operation",
+      "position": "Staff 17",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2023-01-05",
+      "tenureYears": 5,
+      "performanceScore": 23,
+      "potentialScore": 95,
+      "boxId": "box_3",
+      "badges": [
+        "High Potential",
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 48,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=17"
+    },
+    {
+      "id": "emp_19",
+      "name": "Anton Hidayat",
+      "gender": "Female",
+      "age": 39,
+      "department": "HR",
+      "position": "Staff 18",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2025-09-05",
+      "tenureYears": 0,
+      "performanceScore": 78,
+      "potentialScore": 34,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 7,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=18"
+    },
+    {
+      "id": "emp_20",
+      "name": "Jane Hidayat",
+      "gender": "Female",
+      "age": 60,
+      "department": "Finance",
+      "position": "Staff 19",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2022-05-12",
+      "tenureYears": 9,
+      "performanceScore": 86,
+      "potentialScore": 35,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now",
+        "High Performer"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 21,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=19"
+    },
+    {
+      "id": "emp_21",
+      "name": "Siti Hidayat",
+      "gender": "Female",
+      "age": 61,
+      "department": "Marketing",
+      "position": "Staff 20",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2022-10-19",
+      "tenureYears": 7,
+      "performanceScore": 54,
+      "potentialScore": 48,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 82,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=20"
+    },
+    {
+      "id": "emp_22",
+      "name": "Andi Hidayat",
+      "gender": "Female",
+      "age": 60,
+      "department": "Product",
+      "position": "Staff 21",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2018-10-24",
+      "tenureYears": 6,
+      "performanceScore": 79,
+      "potentialScore": 88,
+      "boxId": "box_9",
+      "badges": [
+        "Future Leader",
+        "Ready Now",
+        "High Potential"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 12,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=21"
+    },
+    {
+      "id": "emp_23",
+      "name": "Jane Sari",
+      "gender": "Male",
+      "age": 31,
+      "department": "HR",
+      "position": "Staff 22",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2024-04-24",
+      "tenureYears": 0,
+      "performanceScore": 22,
+      "potentialScore": 49,
+      "boxId": "box_2",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 72,
+      "status": "Resigned",
+      "avatar": "https://i.pravatar.cc/150?u=22"
+    },
+    {
+      "id": "emp_24",
+      "name": "Jane Nugroho",
+      "gender": "Male",
+      "age": 37,
+      "department": "Finance",
+      "position": "Staff 23",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2025-09-20",
+      "tenureYears": 8,
+      "performanceScore": 72,
+      "potentialScore": 40,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 78,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=23"
+    },
+    {
+      "id": "emp_25",
+      "name": "Rudi Wijaya",
+      "gender": "Male",
+      "age": 23,
+      "department": "Finance",
+      "position": "Staff 24",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2018-04-30",
+      "tenureYears": 1,
+      "performanceScore": 22,
+      "potentialScore": 35,
+      "boxId": "box_2",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 95,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=24"
+    },
+    {
+      "id": "emp_26",
+      "name": "Sarah Wijaya",
+      "gender": "Female",
+      "age": 48,
+      "department": "Finance",
+      "position": "Staff 25",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2016-09-30",
+      "tenureYears": 7,
+      "performanceScore": 52,
+      "potentialScore": 60,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 2,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=25"
+    },
+    {
+      "id": "emp_27",
+      "name": "Siti Wahyudi",
+      "gender": "Female",
+      "age": 52,
+      "department": "Finance",
+      "position": "Staff 26",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2024-09-03",
+      "tenureYears": 7,
+      "performanceScore": 58,
+      "potentialScore": 51,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 92,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=26"
+    },
+    {
+      "id": "emp_28",
+      "name": "John Sari",
+      "gender": "Male",
+      "age": 46,
+      "department": "Marketing",
+      "position": "Staff 27",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2023-07-10",
+      "tenureYears": 5,
+      "performanceScore": 65,
+      "potentialScore": 76,
+      "boxId": "box_6",
+      "badges": [
+        "Critical Talent"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 86,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=27"
+    },
+    {
+      "id": "emp_29",
+      "name": "Kevin Saputra",
+      "gender": "Male",
+      "age": 24,
+      "department": "Marketing",
+      "position": "Staff 28",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2026-06-05",
+      "tenureYears": 8,
+      "performanceScore": 74,
+      "potentialScore": 66,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 16,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=28"
+    },
+    {
+      "id": "emp_30",
+      "name": "John Pangestu",
+      "gender": "Female",
+      "age": 47,
+      "department": "Marketing",
+      "position": "Staff 29",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2020-08-09",
+      "tenureYears": 0,
+      "performanceScore": 99,
+      "potentialScore": 45,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now",
+        "High Performer"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 63,
+      "status": "Resigned",
+      "avatar": "https://i.pravatar.cc/150?u=29"
+    },
+    {
+      "id": "emp_31",
+      "name": "John Pratama",
+      "gender": "Male",
+      "age": 58,
+      "department": "Finance",
+      "position": "Staff 30",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2023-06-05",
+      "tenureYears": 4,
+      "performanceScore": 66,
+      "potentialScore": 17,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 52,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=30"
+    },
+    {
+      "id": "emp_32",
+      "name": "Nina Wijaya",
+      "gender": "Female",
+      "age": 47,
+      "department": "Product",
+      "position": "Staff 31",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2025-07-12",
+      "tenureYears": 7,
+      "performanceScore": 8,
+      "potentialScore": 47,
+      "boxId": "box_2",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 19,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=31"
+    },
+    {
+      "id": "emp_33",
+      "name": "Siti Pangestu",
+      "gender": "Female",
+      "age": 22,
+      "department": "Marketing",
+      "position": "Staff 32",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2018-12-12",
+      "tenureYears": 4,
+      "performanceScore": 21,
+      "potentialScore": 46,
+      "boxId": "box_2",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 7,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=32"
+    },
+    {
+      "id": "emp_34",
+      "name": "John Saputra",
+      "gender": "Male",
+      "age": 59,
+      "department": "Product",
+      "position": "Staff 33",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2024-01-26",
+      "tenureYears": 6,
+      "performanceScore": 8,
+      "potentialScore": 95,
+      "boxId": "box_3",
+      "badges": [
+        "High Potential",
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 99,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=33"
+    },
+    {
+      "id": "emp_35",
+      "name": "Rudi Wahyudi",
+      "gender": "Male",
+      "age": 43,
+      "department": "Engineering",
+      "position": "Staff 34",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2019-03-29",
+      "tenureYears": 0,
+      "performanceScore": 47,
+      "potentialScore": 52,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 89,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=34"
+    },
+    {
+      "id": "emp_36",
+      "name": "Siti Pratama",
+      "gender": "Male",
+      "age": 34,
+      "department": "Product",
+      "position": "Staff 35",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2017-12-02",
+      "tenureYears": 1,
+      "performanceScore": 46,
+      "potentialScore": 2,
+      "boxId": "box_4",
+      "badges": [
+        "Critical Talent",
+        "Retention Risk"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 9,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=35"
+    },
+    {
+      "id": "emp_37",
+      "name": "Rudi Lestari",
+      "gender": "Female",
+      "age": 48,
+      "department": "Finance",
+      "position": "Staff 36",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2026-05-30",
+      "tenureYears": 5,
+      "performanceScore": 10,
+      "potentialScore": 58,
+      "boxId": "box_2",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 39,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=36"
+    },
+    {
+      "id": "emp_38",
+      "name": "David Saputra",
+      "gender": "Male",
+      "age": 38,
+      "department": "Sales",
+      "position": "Staff 37",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2024-05-28",
+      "tenureYears": 9,
+      "performanceScore": 87,
+      "potentialScore": 10,
+      "boxId": "box_7",
+      "badges": [
+        "High Performer",
+        "Retention Risk"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 55,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=37"
+    },
+    {
+      "id": "emp_39",
+      "name": "John Pratama",
+      "gender": "Female",
+      "age": 51,
+      "department": "Sales",
+      "position": "Staff 38",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2025-05-21",
+      "tenureYears": 7,
+      "performanceScore": 44,
+      "potentialScore": 14,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 23,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=38"
+    },
+    {
+      "id": "emp_40",
+      "name": "Reza Lestari",
+      "gender": "Male",
+      "age": 36,
+      "department": "Operation",
+      "position": "Staff 39",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2020-08-18",
+      "tenureYears": 2,
+      "performanceScore": 18,
+      "potentialScore": 33,
+      "boxId": "box_1",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 84,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=39"
+    },
+    {
+      "id": "emp_41",
+      "name": "David Sari",
+      "gender": "Male",
+      "age": 29,
+      "department": "Finance",
+      "position": "Staff 40",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2022-06-30",
+      "tenureYears": 2,
+      "performanceScore": 24,
+      "potentialScore": 13,
+      "boxId": "box_1",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 90,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=40"
+    },
+    {
+      "id": "emp_42",
+      "name": "Rudi Siregar",
+      "gender": "Female",
+      "age": 44,
+      "department": "Product",
+      "position": "Staff 41",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2020-02-28",
+      "tenureYears": 3,
+      "performanceScore": 16,
+      "potentialScore": 73,
+      "boxId": "box_3",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 83,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=41"
+    },
+    {
+      "id": "emp_43",
+      "name": "Andi Santoso",
+      "gender": "Female",
+      "age": 28,
+      "department": "Engineering",
+      "position": "Staff 42",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2016-12-29",
+      "tenureYears": 8,
+      "performanceScore": 45,
+      "potentialScore": 72,
+      "boxId": "box_6",
+      "badges": [],
+      "riskLevel": "High",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 7,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=42"
+    },
+    {
+      "id": "emp_44",
+      "name": "Ayu Wahyudi",
+      "gender": "Male",
+      "age": 35,
+      "department": "Marketing",
+      "position": "Staff 43",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2016-07-30",
+      "tenureYears": 7,
+      "performanceScore": 72,
+      "potentialScore": 37,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 68,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=43"
+    },
+    {
+      "id": "emp_45",
+      "name": "Rina Setiawan",
+      "gender": "Male",
+      "age": 43,
+      "department": "Product",
+      "position": "Staff 44",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2020-09-15",
+      "tenureYears": 7,
+      "performanceScore": 95,
+      "potentialScore": 86,
+      "boxId": "box_9",
+      "badges": [
+        "Future Leader",
+        "Ready Now",
+        "High Performer",
+        "High Potential"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 42,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=44"
+    },
+    {
+      "id": "emp_46",
+      "name": "Fahmi Saputra",
+      "gender": "Female",
+      "age": 48,
+      "department": "Operation",
+      "position": "Staff 45",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2019-10-29",
+      "tenureYears": 6,
+      "performanceScore": 95,
+      "potentialScore": 1,
+      "boxId": "box_7",
+      "badges": [
+        "High Performer",
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 26,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=45"
+    },
+    {
+      "id": "emp_47",
+      "name": "Kevin Nugroho",
+      "gender": "Female",
+      "age": 48,
+      "department": "Engineering",
+      "position": "Staff 46",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2022-10-27",
+      "tenureYears": 8,
+      "performanceScore": 58,
+      "potentialScore": 71,
+      "boxId": "box_6",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 39,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=46"
+    },
+    {
+      "id": "emp_48",
+      "name": "Kevin Nugroho",
+      "gender": "Female",
+      "age": 35,
+      "department": "Operation",
+      "position": "Staff 47",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2021-09-08",
+      "tenureYears": 8,
+      "performanceScore": 94,
+      "potentialScore": 14,
+      "boxId": "box_7",
+      "badges": [
+        "High Performer",
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 41,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=47"
+    },
+    {
+      "id": "emp_49",
+      "name": "Dimas Pratama",
+      "gender": "Female",
+      "age": 57,
+      "department": "Product",
+      "position": "Staff 48",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2022-08-21",
+      "tenureYears": 5,
+      "performanceScore": 61,
+      "potentialScore": 90,
+      "boxId": "box_6",
+      "badges": [
+        "High Potential"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 8,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=48"
+    },
+    {
+      "id": "emp_50",
+      "name": "Ayu Siregar",
+      "gender": "Female",
+      "age": 37,
+      "department": "Finance",
+      "position": "Staff 49",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2026-05-03",
+      "tenureYears": 2,
+      "performanceScore": 75,
+      "potentialScore": 32,
+      "boxId": "box_7",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 55,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=49"
+    },
+    {
+      "id": "emp_51",
+      "name": "John Pangestu",
+      "gender": "Male",
+      "age": 46,
+      "department": "Product",
+      "position": "Staff 50",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2025-12-30",
+      "tenureYears": 7,
+      "performanceScore": 72,
+      "potentialScore": 27,
+      "boxId": "box_7",
+      "badges": [
+        "Critical Talent",
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 66,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=50"
+    },
+    {
+      "id": "emp_52",
+      "name": "Dewi Sari",
+      "gender": "Male",
+      "age": 54,
+      "department": "Product",
+      "position": "Staff 51",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2025-07-25",
+      "tenureYears": 8,
+      "performanceScore": 64,
+      "potentialScore": 59,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Low",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 44,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=51"
+    },
+    {
+      "id": "emp_53",
+      "name": "Linda Saputra",
+      "gender": "Male",
+      "age": 38,
+      "department": "Product",
+      "position": "Staff 52",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2022-01-20",
+      "tenureYears": 1,
+      "performanceScore": 80,
+      "potentialScore": 14,
+      "boxId": "box_7",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 21,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=52"
+    },
+    {
+      "id": "emp_54",
+      "name": "Siti Sari",
+      "gender": "Male",
+      "age": 55,
+      "department": "Operation",
+      "position": "Staff 53",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2023-02-23",
+      "tenureYears": 0,
+      "performanceScore": 47,
+      "potentialScore": 4,
+      "boxId": "box_4",
+      "badges": [
+        "Critical Talent",
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 66,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=53"
+    },
+    {
+      "id": "emp_55",
+      "name": "Dimas Pangestu",
+      "gender": "Female",
+      "age": 29,
+      "department": "Marketing",
+      "position": "Staff 54",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2020-05-16",
+      "tenureYears": 1,
+      "performanceScore": 72,
+      "potentialScore": 86,
+      "boxId": "box_9",
+      "badges": [
+        "Future Leader",
+        "Ready Now",
+        "High Potential"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 12,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=54"
+    },
+    {
+      "id": "emp_56",
+      "name": "Dimas Nugroho",
+      "gender": "Female",
+      "age": 26,
+      "department": "Operation",
+      "position": "Staff 55",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2020-08-15",
+      "tenureYears": 1,
+      "performanceScore": 86,
+      "potentialScore": 1,
+      "boxId": "box_7",
+      "badges": [
+        "High Performer",
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 74,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=55"
+    },
+    {
+      "id": "emp_57",
+      "name": "Sarah Setiawan",
+      "gender": "Female",
+      "age": 34,
+      "department": "Marketing",
+      "position": "Staff 56",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2025-02-14",
+      "tenureYears": 5,
+      "performanceScore": 56,
+      "potentialScore": 63,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 89,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=56"
+    },
+    {
+      "id": "emp_58",
+      "name": "Andi Hidayat",
+      "gender": "Female",
+      "age": 32,
+      "department": "HR",
+      "position": "Staff 57",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2023-06-10",
+      "tenureYears": 5,
+      "performanceScore": 94,
+      "potentialScore": 16,
+      "boxId": "box_7",
+      "badges": [
+        "High Performer",
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 56,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=57"
+    },
+    {
+      "id": "emp_59",
+      "name": "Anton Nugroho",
+      "gender": "Female",
+      "age": 46,
+      "department": "Engineering",
+      "position": "Staff 58",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2025-02-13",
+      "tenureYears": 6,
+      "performanceScore": 49,
+      "potentialScore": 36,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 93,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=58"
+    },
+    {
+      "id": "emp_60",
+      "name": "Sarah Saputra",
+      "gender": "Male",
+      "age": 35,
+      "department": "Marketing",
+      "position": "Staff 59",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2019-10-08",
+      "tenureYears": 5,
+      "performanceScore": 63,
+      "potentialScore": 28,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 7,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=59"
+    },
+    {
+      "id": "emp_61",
+      "name": "Nina Wijaya",
+      "gender": "Male",
+      "age": 55,
+      "department": "Finance",
+      "position": "Staff 60",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2025-11-16",
+      "tenureYears": 3,
+      "performanceScore": 97,
+      "potentialScore": 99,
+      "boxId": "box_9",
+      "badges": [
+        "Future Leader",
+        "Ready Now",
+        "High Performer",
+        "High Potential"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 27,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=60"
+    },
+    {
+      "id": "emp_62",
+      "name": "David Siregar",
+      "gender": "Male",
+      "age": 32,
+      "department": "Operation",
+      "position": "Staff 61",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2020-09-10",
+      "tenureYears": 2,
+      "performanceScore": 72,
+      "potentialScore": 84,
+      "boxId": "box_9",
+      "badges": [
+        "Future Leader",
+        "Ready Now",
+        "High Potential"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 53,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=61"
+    },
+    {
+      "id": "emp_63",
+      "name": "David Setiawan",
+      "gender": "Male",
+      "age": 46,
+      "department": "Engineering",
+      "position": "Staff 62",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2016-09-07",
+      "tenureYears": 4,
+      "performanceScore": 32,
+      "potentialScore": 24,
+      "boxId": "box_1",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 19,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=62"
+    },
+    {
+      "id": "emp_64",
+      "name": "Budi Siregar",
+      "gender": "Female",
+      "age": 58,
+      "department": "Sales",
+      "position": "Staff 63",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2022-09-26",
+      "tenureYears": 9,
+      "performanceScore": 32,
+      "potentialScore": 97,
+      "boxId": "box_3",
+      "badges": [
+        "High Potential"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 89,
+      "status": "Resigned",
+      "avatar": "https://i.pravatar.cc/150?u=63"
+    },
+    {
+      "id": "emp_65",
+      "name": "John Sari",
+      "gender": "Female",
+      "age": 29,
+      "department": "HR",
+      "position": "Staff 64",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2025-07-11",
+      "tenureYears": 3,
+      "performanceScore": 49,
+      "potentialScore": 63,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 46,
+      "status": "Resigned",
+      "avatar": "https://i.pravatar.cc/150?u=64"
+    },
+    {
+      "id": "emp_66",
+      "name": "Siti Setiawan",
+      "gender": "Male",
+      "age": 36,
+      "department": "Finance",
+      "position": "Staff 65",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2025-05-14",
+      "tenureYears": 1,
+      "performanceScore": 51,
+      "potentialScore": 32,
+      "boxId": "box_4",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 73,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=65"
+    },
+    {
+      "id": "emp_67",
+      "name": "Dewi Siregar",
+      "gender": "Male",
+      "age": 38,
+      "department": "Finance",
+      "position": "Staff 66",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2020-04-12",
+      "tenureYears": 0,
+      "performanceScore": 92,
+      "potentialScore": 20,
+      "boxId": "box_7",
+      "badges": [
+        "High Performer",
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 29,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=66"
+    },
+    {
+      "id": "emp_68",
+      "name": "Budi Hidayat",
+      "gender": "Female",
+      "age": 41,
+      "department": "HR",
+      "position": "Staff 67",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2024-04-15",
+      "tenureYears": 7,
+      "performanceScore": 54,
+      "potentialScore": 22,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 26,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=67"
+    },
+    {
+      "id": "emp_69",
+      "name": "Jane Nugroho",
+      "gender": "Female",
+      "age": 53,
+      "department": "Sales",
+      "position": "Staff 68",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2019-04-16",
+      "tenureYears": 9,
+      "performanceScore": 49,
+      "potentialScore": 11,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 97,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=68"
+    },
+    {
+      "id": "emp_70",
+      "name": "Siti Kusuma",
+      "gender": "Male",
+      "age": 39,
+      "department": "Product",
+      "position": "Staff 69",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2016-09-13",
+      "tenureYears": 8,
+      "performanceScore": 40,
+      "potentialScore": 1,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 35,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=69"
+    },
+    {
+      "id": "emp_71",
+      "name": "Linda Siregar",
+      "gender": "Male",
+      "age": 36,
+      "department": "Product",
+      "position": "Staff 70",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2017-11-21",
+      "tenureYears": 0,
+      "performanceScore": 56,
+      "potentialScore": 69,
+      "boxId": "box_6",
+      "badges": [],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 57,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=70"
+    },
+    {
+      "id": "emp_72",
+      "name": "Jane Sari",
+      "gender": "Male",
+      "age": 25,
+      "department": "Sales",
+      "position": "Staff 71",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2020-08-12",
+      "tenureYears": 6,
+      "performanceScore": 56,
+      "potentialScore": 53,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "High",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 99,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=71"
+    },
+    {
+      "id": "emp_73",
+      "name": "David Pangestu",
+      "gender": "Male",
+      "age": 26,
+      "department": "HR",
+      "position": "Staff 72",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2020-12-05",
+      "tenureYears": 3,
+      "performanceScore": 36,
+      "potentialScore": 40,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 91,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=72"
+    },
+    {
+      "id": "emp_74",
+      "name": "Rina Siregar",
+      "gender": "Female",
+      "age": 54,
+      "department": "Product",
+      "position": "Staff 73",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2017-04-07",
+      "tenureYears": 3,
+      "performanceScore": 29,
+      "potentialScore": 15,
+      "boxId": "box_1",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 39,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=73"
+    },
+    {
+      "id": "emp_75",
+      "name": "Anton Kusuma",
+      "gender": "Female",
+      "age": 23,
+      "department": "Engineering",
+      "position": "Staff 74",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2019-11-22",
+      "tenureYears": 0,
+      "performanceScore": 17,
+      "potentialScore": 65,
+      "boxId": "box_2",
+      "badges": [
+        "Critical Talent",
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 75,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=74"
+    },
+    {
+      "id": "emp_76",
+      "name": "Kevin Wahyudi",
+      "gender": "Female",
+      "age": 39,
+      "department": "Marketing",
+      "position": "Staff 75",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2026-03-20",
+      "tenureYears": 8,
+      "performanceScore": 85,
+      "potentialScore": 4,
+      "boxId": "box_7",
+      "badges": [
+        "High Performer",
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 99,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=75"
+    },
+    {
+      "id": "emp_77",
+      "name": "Fahmi Setiawan",
+      "gender": "Female",
+      "age": 26,
+      "department": "HR",
+      "position": "Staff 76",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2016-07-23",
+      "tenureYears": 8,
+      "performanceScore": 11,
+      "potentialScore": 48,
+      "boxId": "box_2",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 47,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=76"
+    },
+    {
+      "id": "emp_78",
+      "name": "John Pratama",
+      "gender": "Male",
+      "age": 28,
+      "department": "HR",
+      "position": "Staff 77",
+      "division": "Core",
+      "location": "Bandung",
+      "joinDate": "2019-04-05",
+      "tenureYears": 8,
+      "performanceScore": 76,
+      "potentialScore": 49,
+      "boxId": "box_8",
+      "badges": [
+        "Ready Now"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 98,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=77"
+    },
+    {
+      "id": "emp_79",
+      "name": "Putri Kusuma",
+      "gender": "Female",
+      "age": 39,
+      "department": "Engineering",
+      "position": "Staff 78",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2017-05-11",
+      "tenureYears": 1,
+      "performanceScore": 26,
+      "potentialScore": 10,
+      "boxId": "box_1",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 83,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=78"
+    },
+    {
+      "id": "emp_80",
+      "name": "Nadia Wijaya",
+      "gender": "Female",
+      "age": 42,
+      "department": "HR",
+      "position": "Staff 79",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2020-04-27",
+      "tenureYears": 5,
+      "performanceScore": 81,
+      "potentialScore": 11,
+      "boxId": "box_7",
+      "badges": [
+        "High Performer",
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 88,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=79"
+    },
+    {
+      "id": "emp_81",
+      "name": "Putri Sari",
+      "gender": "Female",
+      "age": 42,
+      "department": "HR",
+      "position": "Staff 80",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2023-09-23",
+      "tenureYears": 3,
+      "performanceScore": 22,
+      "potentialScore": 11,
+      "boxId": "box_1",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 97,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=80"
+    },
+    {
+      "id": "emp_82",
+      "name": "Sarah Nugroho",
+      "gender": "Female",
+      "age": 34,
+      "department": "Product",
+      "position": "Staff 81",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2017-08-22",
+      "tenureYears": 8,
+      "performanceScore": 65,
+      "potentialScore": 15,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 31,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=81"
+    },
+    {
+      "id": "emp_83",
+      "name": "Putri Wahyudi",
+      "gender": "Female",
+      "age": 50,
+      "department": "Sales",
+      "position": "Staff 82",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2022-04-20",
+      "tenureYears": 6,
+      "performanceScore": 71,
+      "potentialScore": 10,
+      "boxId": "box_7",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 45,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=82"
+    },
+    {
+      "id": "emp_84",
+      "name": "Dewi Santoso",
+      "gender": "Female",
+      "age": 45,
+      "department": "Product",
+      "position": "Staff 83",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2022-04-27",
+      "tenureYears": 7,
+      "performanceScore": 17,
+      "potentialScore": 78,
+      "boxId": "box_3",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 43,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=83"
+    },
+    {
+      "id": "emp_85",
+      "name": "Kevin Setiawan",
+      "gender": "Female",
+      "age": 41,
+      "department": "Engineering",
+      "position": "Staff 84",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2023-12-13",
+      "tenureYears": 8,
+      "performanceScore": 35,
+      "potentialScore": 72,
+      "boxId": "box_6",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 82,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=84"
+    },
+    {
+      "id": "emp_86",
+      "name": "Sarah Pratama",
+      "gender": "Female",
+      "age": 42,
+      "department": "Product",
+      "position": "Staff 85",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2022-05-13",
+      "tenureYears": 3,
+      "performanceScore": 30,
+      "potentialScore": 97,
+      "boxId": "box_3",
+      "badges": [
+        "High Potential"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 11,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=85"
+    },
+    {
+      "id": "emp_87",
+      "name": "Linda Sari",
+      "gender": "Female",
+      "age": 43,
+      "department": "Operation",
+      "position": "Staff 86",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2022-06-22",
+      "tenureYears": 2,
+      "performanceScore": 42,
+      "potentialScore": 71,
+      "boxId": "box_6",
+      "badges": [],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 21,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=86"
+    },
+    {
+      "id": "emp_88",
+      "name": "Linda Saputra",
+      "gender": "Female",
+      "age": 57,
+      "department": "Product",
+      "position": "Staff 87",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2024-12-12",
+      "tenureYears": 3,
+      "performanceScore": 60,
+      "potentialScore": 27,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 41,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=87"
+    },
+    {
+      "id": "emp_89",
+      "name": "Kevin Kusuma",
+      "gender": "Male",
+      "age": 38,
+      "department": "Operation",
+      "position": "Staff 88",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2021-07-10",
+      "tenureYears": 2,
+      "performanceScore": 89,
+      "potentialScore": 10,
+      "boxId": "box_7",
+      "badges": [
+        "High Performer",
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 58,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=88"
+    },
+    {
+      "id": "emp_90",
+      "name": "Rudi Pratama",
+      "gender": "Male",
+      "age": 22,
+      "department": "Sales",
+      "position": "Staff 89",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2017-08-09",
+      "tenureYears": 7,
+      "performanceScore": 35,
+      "potentialScore": 90,
+      "boxId": "box_6",
+      "badges": [
+        "High Potential"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 28,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=89"
+    },
+    {
+      "id": "emp_91",
+      "name": "Kevin Pangestu",
+      "gender": "Female",
+      "age": 54,
+      "department": "Product",
+      "position": "Staff 90",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2021-02-25",
+      "tenureYears": 5,
+      "performanceScore": 22,
+      "potentialScore": 60,
+      "boxId": "box_2",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 95,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=90"
+    },
+    {
+      "id": "emp_92",
+      "name": "Andi Pangestu",
+      "gender": "Male",
+      "age": 45,
+      "department": "Sales",
+      "position": "Staff 91",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2024-11-25",
+      "tenureYears": 9,
+      "performanceScore": 37,
+      "potentialScore": 14,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 42,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=91"
+    },
+    {
+      "id": "emp_93",
+      "name": "Siti Siregar",
+      "gender": "Female",
+      "age": 57,
+      "department": "Sales",
+      "position": "Staff 92",
+      "division": "Core",
+      "location": "Bali",
+      "joinDate": "2024-06-13",
+      "tenureYears": 2,
+      "performanceScore": 42,
+      "potentialScore": 97,
+      "boxId": "box_6",
+      "badges": [
+        "High Potential",
+        "Critical Talent"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 3,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=92"
+    },
+    {
+      "id": "emp_94",
+      "name": "Nina Sari",
+      "gender": "Male",
+      "age": 49,
+      "department": "Engineering",
+      "position": "Staff 93",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2025-06-17",
+      "tenureYears": 4,
+      "performanceScore": 6,
+      "potentialScore": 51,
+      "boxId": "box_2",
+      "badges": [
+        "Critical Talent",
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 2,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=93"
+    },
+    {
+      "id": "emp_95",
+      "name": "Dimas Setiawan",
+      "gender": "Female",
+      "age": 28,
+      "department": "Sales",
+      "position": "Staff 94",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2017-09-14",
+      "tenureYears": 9,
+      "performanceScore": 45,
+      "potentialScore": 11,
+      "boxId": "box_4",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 10,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=94"
+    },
+    {
+      "id": "emp_96",
+      "name": "Anton Nugroho",
+      "gender": "Female",
+      "age": 53,
+      "department": "Engineering",
+      "position": "Staff 95",
+      "division": "Core",
+      "location": "Surabaya",
+      "joinDate": "2019-04-09",
+      "tenureYears": 7,
+      "performanceScore": 3,
+      "potentialScore": 85,
+      "boxId": "box_3",
+      "badges": [
+        "High Potential",
+        "Critical Talent",
+        "Retention Risk"
+      ],
+      "riskLevel": "Medium",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 8,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=95"
+    },
+    {
+      "id": "emp_97",
+      "name": "Dewi Santoso",
+      "gender": "Female",
+      "age": 34,
+      "department": "Marketing",
+      "position": "Staff 96",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2025-03-10",
+      "tenureYears": 2,
+      "performanceScore": 47,
+      "potentialScore": 43,
+      "boxId": "box_5",
+      "badges": [],
+      "riskLevel": "High",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 70,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=96"
+    },
+    {
+      "id": "emp_98",
+      "name": "Anton Nugroho",
+      "gender": "Male",
+      "age": 57,
+      "department": "Operation",
+      "position": "Staff 97",
+      "division": "Core",
+      "location": "Jakarta",
+      "joinDate": "2023-10-24",
+      "tenureYears": 4,
+      "performanceScore": 9,
+      "potentialScore": 60,
+      "boxId": "box_2",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "Low",
+      "readinessLevel": "3-5 Years",
+      "leadershipScore": 99,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=97"
+    },
+    {
+      "id": "emp_99",
+      "name": "Linda Kusuma",
+      "gender": "Female",
+      "age": 27,
+      "department": "HR",
+      "position": "Staff 98",
+      "division": "Core",
+      "location": "Singapore",
+      "joinDate": "2025-06-13",
+      "tenureYears": 1,
+      "performanceScore": 41,
+      "potentialScore": 31,
+      "boxId": "box_4",
+      "badges": [],
+      "riskLevel": "Low",
+      "readinessLevel": "1-2 Years",
+      "leadershipScore": 88,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=98"
+    },
+    {
+      "id": "emp_100",
+      "name": "Linda Hidayat",
+      "gender": "Male",
+      "age": 39,
+      "department": "Engineering",
+      "position": "Staff 99",
+      "division": "Core",
+      "location": "Kuala Lumpur",
+      "joinDate": "2025-01-05",
+      "tenureYears": 2,
+      "performanceScore": 21,
+      "potentialScore": 53,
+      "boxId": "box_2",
+      "badges": [
+        "Retention Risk"
+      ],
+      "riskLevel": "High",
+      "readinessLevel": "Ready Now",
+      "leadershipScore": 67,
+      "status": "Active",
+      "avatar": "https://i.pravatar.cc/150?u=99"
+    }
+  ],
+  "systemConfig": {
+    "currentQuarter": "Q1 2026",
+    "daysRemaining": 15,
+    "committedThreshold": 100,
+    "aspirationalThreshold": 70,
+    "remindersEnabled": true,
+    "collaborationFactor": 1.2,
+    "startDate": "2026-01-01",
+    "endDate": "2026-03-31",
+    "notificationRules": {
+      "aspirational": {
+        "maxTargetRule": 0.7,
+        "maxTargetWarning": "Target belum ideal",
+        "achievementFailThreshold": 0.7,
+        "achievementFailWarning": "Target tidak tercapai"
+      },
+      "committed": {
+        "idealTargetRule": 1,
+        "successMessage": "Target tercapai",
+        "failMessage": "Target belum tercapai"
+      }
+    },
+    "approvalWorkflow": [
+      "atasan_langsung",
+      "direksi"
+    ],
+    "eval360Templates": [
+      {
+        "id": "template_1",
+        "name": "Template Evaluasi 360 Derajat Q1 2026",
+        "description": "Evaluasi kompetensi kepemimpinan dan kerjasama tim",
+        "status": "active",
+        "evaluateeId": "",
+        "raterAssignments": [],
+        "questions": [
+          {
+            "id": "q1",
+            "text": "Kemampuan memimpin tim dan memberikan arahan",
+            "category": "Leadership",
+            "weight": 50,
+            "type": "multiple_choice"
+          },
+          {
+            "id": "q2",
+            "text": "Komunikasi dan kerjasama antar departemen",
+            "category": "Teamwork",
+            "weight": 50,
+            "type": "multiple_choice"
+          }
+        ],
+        "raterWeights": [
+          {
+            "groupId": "supervisor",
+            "name": "Atasan",
+            "weight": 40
+          },
+          {
+            "groupId": "peer",
+            "name": "Rekan Kerja",
+            "weight": 30
+          },
+          {
+            "groupId": "subordinate",
+            "name": "Bawahan",
+            "weight": 20
+          },
+          {
+            "groupId": "self",
+            "name": "Diri Sendiri",
+            "weight": 10
+          }
+        ],
+        "assignments": [
+          {
+            "id": "assign_1",
+            "targetType": "all",
+            "targetId": null
+          }
+        ]
+      },
+      {
+        "id": "tpl360_1782893497387",
+        "name": "Template 360 Baru",
+        "description": "",
+        "evaluateeId": "",
+        "status": "draft",
+        "questions": [
+          {
+            "id": "q_1782893497387_1",
+            "text": "Kemampuan Kepemimpinan",
+            "category": "Leadership",
+            "weight": 50,
+            "type": "multiple_choice"
+          },
+          {
+            "id": "q_1782893497387_2",
+            "text": "Kerja Sama Tim",
+            "category": "Teamwork",
+            "weight": 50,
+            "type": "multiple_choice"
+          }
+        ],
+        "raterWeights": [
+          {
+            "groupId": "supervisor",
+            "name": "Atasan (Supervisor)",
+            "weight": 40
+          },
+          {
+            "groupId": "peer",
+            "name": "Rekan Kerja (Peer)",
+            "weight": 20
+          },
+          {
+            "groupId": "cross_department",
+            "name": "Lintas Departemen (Cross-Dept)",
+            "weight": 20
+          },
+          {
+            "groupId": "subordinate",
+            "name": "Bawahan (Subordinate)",
+            "weight": 10
+          },
+          {
+            "groupId": "self",
+            "name": "Diri Sendiri (Self)",
+            "weight": 10
+          }
+        ],
+        "assignments": [],
+        "raterAssignments": []
+      },
+      {
+        "id": "tpl360_1782893499190",
+        "name": "Template 360 Baru",
+        "description": "",
+        "evaluateeId": "",
+        "status": "draft",
+        "questions": [
+          {
+            "id": "q_1782893499190_1",
+            "text": "Kemampuan Kepemimpinan",
+            "category": "Leadership",
+            "weight": 50,
+            "type": "multiple_choice"
+          },
+          {
+            "id": "q_1782893499190_2",
+            "text": "Kerja Sama Tim",
+            "category": "Teamwork",
+            "weight": 50,
+            "type": "multiple_choice"
+          }
+        ],
+        "raterWeights": [
+          {
+            "groupId": "supervisor",
+            "name": "Atasan (Supervisor)",
+            "weight": 40
+          },
+          {
+            "groupId": "peer",
+            "name": "Rekan Kerja (Peer)",
+            "weight": 20
+          },
+          {
+            "groupId": "cross_department",
+            "name": "Lintas Departemen (Cross-Dept)",
+            "weight": 20
+          },
+          {
+            "groupId": "subordinate",
+            "name": "Bawahan (Subordinate)",
+            "weight": 10
+          },
+          {
+            "groupId": "self",
+            "name": "Diri Sendiri (Self)",
+            "weight": 10
+          }
+        ],
+        "assignments": [],
+        "raterAssignments": []
+      }
+    ],
+    "multiRater360Config": {
+      "enabled": true,
+      "evaluatorAssignments": [
+        {
+          "evaluatorId": "usr_hr_2",
+          "evaluateeId": "usr_hr_1",
+          "groupId": "subordinate"
+        },
+        {
+          "evaluatorId": "usr_prod_2",
+          "evaluateeId": "usr_hr_1",
+          "groupId": "peer"
+        },
+        {
+          "evaluatorId": "usr_hr_1",
+          "evaluateeId": "usr_hr_1",
+          "groupId": "self"
+        },
+        {
+          "evaluatorId": "usr_prod_1",
+          "evaluateeId": "usr_prod_2",
+          "groupId": "supervisor"
+        }
+      ],
+      "questionTemplates": [
+        {
+          "id": "q1",
+          "category": "Kepemimpinan",
+          "question": "Kemampuan memimpin tim dan memberikan arahan yang jelas",
+          "weight": 50
+        },
+        {
+          "id": "q2",
+          "category": "Kerjasama",
+          "question": "Komunikasi dan kerjasama antar departemen",
+          "weight": 50
+        }
+      ],
+      "weightSupervisor": 40,
+      "weightPeer": 30,
+      "weightSubordinate": 20,
+      "weightSelf": 10,
+      "weightCrossDept": 0
+    },
+    "questionnaires": [
+      {
+        "id": "q1",
+        "question": "Jika target tidak tercapai, apakah operasional inti langsung terganggu?",
+        "yesScore": 20,
+        "yesCategory": "komitmen",
+        "noScore": 0,
+        "noCategory": "aspirasional"
+      },
+      {
+        "id": "q2",
+        "question": "Apakah target ini menuntut metode baru, transformasi digital, atau pembuatan produk yang belum pernah ada?",
+        "yesScore": 25,
+        "yesCategory": "aspirasional",
+        "noScore": 0,
+        "noCategory": "komitmen"
+      },
+      {
+        "id": "q3",
+        "question": "Apakah tingkat ketidakpastian/risiko kegagalan target ini sangat tinggi?",
+        "yesScore": 20,
+        "yesCategory": "aspirasional",
+        "noScore": 0,
+        "noCategory": "komitmen"
+      },
+      {
+        "id": "q4",
+        "question": "Apakah target ini sengaja dibuat sangat tinggi (stretch goal) di mana pencapaian 60-70% saja sudah dianggap sebagai keberhasilan besar?",
+        "yesScore": 30,
+        "yesCategory": "aspirasional",
+        "noScore": 0,
+        "noCategory": "komitmen"
+      }
+    ],
+    "rolePermissions": [
+      {
+        "id": "direksi",
+        "name": "Direksi",
+        "canViewAllReports": true,
+        "canEditAllReports": true,
+        "canManageOrgStructure": true
+      },
+      {
+        "id": "atasan_tidak_langsung",
+        "name": "Atasan Tidak Langsung",
+        "canViewAllReports": true,
+        "canEditAllReports": false,
+        "canManageOrgStructure": true
+      },
+      {
+        "id": "atasan_langsung",
+        "name": "Atasan Langsung",
+        "canViewAllReports": false,
+        "canEditAllReports": false,
+        "canManageOrgStructure": false
+      },
+      {
+        "id": "karyawan",
+        "name": "Karyawan",
+        "canViewAllReports": false,
+        "canEditAllReports": false,
+        "canManageOrgStructure": false
+      }
+    ],
+    "defaultBscPerspectives": [
+      {
+        "id": "fin_1",
+        "name": "[FINANCIAL] Revenue Growth",
+        "weight": 25,
+        "target": 15,
+        "unit": "%",
+        "calcSystem": "maximize",
+        "score": 0
+      },
+      {
+        "id": "fin_2",
+        "name": "[FINANCIAL] Cost Reduction Improvement",
+        "weight": 15,
+        "target": 100000000,
+        "unit": "IDR",
+        "calcSystem": "minimize",
+        "score": 0
+      },
+      {
+        "id": "cus_3",
+        "name": "[CUSTOMER] Customer Satisfaction Index (CSI)",
+        "weight": 20,
+        "target": 4.5,
+        "unit": "Skor",
+        "calcSystem": "maximize",
+        "score": 0
+      },
+      {
+        "id": "cus_4",
+        "name": "[CUSTOMER] Customer Churn Rate",
+        "weight": 10,
+        "target": 2,
+        "unit": "%",
+        "calcSystem": "minimize",
+        "score": 0
+      },
+      {
+        "id": "int_5",
+        "name": "[INTERNAL BUSINESS PROCESS] Project Delivery On-Time",
+        "weight": 20,
+        "target": 95,
+        "unit": "%",
+        "calcSystem": "maximize",
+        "score": 0
+      },
+      {
+        "id": "int_6",
+        "name": "[INTERNAL BUSINESS PROCESS] Total Production Defects / Waste",
+        "weight": 15,
+        "target": 0,
+        "unit": "Kejadian",
+        "calcSystem": "min_to_zero",
+        "penaltyFactor": 25,
+        "score": 0
+      },
+      {
+        "id": "lrn_7",
+        "name": "[LEARNING & GROWTH] Employee Training Hours per FTE",
+        "weight": 15,
+        "target": 40,
+        "unit": "Jam",
+        "calcSystem": "maximize",
+        "score": 0
+      },
+      {
+        "id": "lrn_8",
+        "name": "[LEARNING & GROWTH] Workplace Accident (Fatality)",
+        "weight": 30,
+        "target": 0,
+        "unit": "Kejadian",
+        "calcSystem": "min_to_zero",
+        "penaltyFactor": 100,
+        "score": 0
+      }
+    ],
+    "performanceCategories": [
+      {
+        "id": "cat_1",
+        "name": "High Performance",
+        "minScore": 110.01,
+        "maxScore": 9999,
+        "color": "text-purple-600 bg-purple-50 border-purple-200"
+      },
+      {
+        "id": "cat_2",
+        "name": "Performance",
+        "minScore": 100.01,
+        "maxScore": 110,
+        "color": "text-emerald-600 bg-emerald-50 border-emerald-200"
+      },
+      {
+        "id": "cat_3",
+        "name": "On Target",
+        "minScore": 100,
+        "maxScore": 100,
+        "color": "text-blue-600 bg-blue-50 border-blue-200"
+      },
+      {
+        "id": "cat_4",
+        "name": "Par",
+        "minScore": 85,
+        "maxScore": 99.99,
+        "color": "text-amber-600 bg-amber-50 border-amber-200"
+      },
+      {
+        "id": "cat_5",
+        "name": "Below Par",
+        "minScore": 0,
+        "maxScore": 84.99,
+        "color": "text-red-600 bg-red-50 border-red-200"
+      }
+    ],
+    "defaultReviewMethod": "okr",
+    "potentialClassifications": [
+      {
+        "label": "High Potential",
+        "min": 76,
+        "max": 100,
+        "color": "bg-emerald-100 text-emerald-800",
+        "description": "Top tier future leaders."
+      },
+      {
+        "label": "Moderate Potential",
+        "min": 41,
+        "max": 75,
+        "color": "bg-amber-100 text-amber-800",
+        "description": "Steady contributors with room to grow."
+      },
+      {
+        "label": "Low Potential",
+        "min": 0,
+        "max": 40,
+        "color": "bg-rose-100 text-rose-800",
+        "description": "Needs significant improvement or realignment."
+      }
+    ],
+    "successionPoolConfig": {
+      "sriWeights": {
+        "performance": 30,
+        "potential": 30,
+        "leadership": 20,
+        "tenure": 10,
+        "readiness": 10
+      },
+      "minSriThreshold": 75,
+      "eligible9BoxQuadrants": [
+        "6",
+        "8",
+        "9"
+      ]
+    }
+  }
+}

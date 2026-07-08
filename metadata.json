@@ -1,0 +1,8 @@
+{
+  "name": "Remix: HRIS Performance Management",
+  "description": "Glassfrog-inspired HRIS performance module featuring Circle/Role management, transparent OKRs, shared goals, contribution weights, weekly check-ins with dependency tracking, and performance cycles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User account and role information",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "avatar": { "type": "string" },
+        "department": { "type": "string" },
+        "systemRole": { "type": "string" }
+      },
+      "required": ["id", "name", "email"]
+    },
+    "Objective": {
+      "title": "Objective",
+      "description": "Organizational objective",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "level": { "type": "string" },
+        "circleId": { "type": "string" },
+        "parentId": { "type": "string" },
+        "targetQuarter": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "title", "level", "targetQuarter"]
+    }
+  },
+  "firestore": {
+    "users": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "objectives": {
+      "schema": "Objective",
+      "description": "Organizational objectives"
+    }
+  }
+}
